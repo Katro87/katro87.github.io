@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Sufyan Rasheed - Get In Touch</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://github.com/Katro87/project-assets/raw/main/Customwebx.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <span>Sufyan</span>Rasheed
+            </a>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../about/index.html" class="nav-link">About</a></li>
+                <li><a href="../services/index.html" class="nav-link">Services</a></li>
+                <li><a href="../projects/index.html" class="nav-link">Projects</a></li>
+                <li><a href="index.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="hero contact-section" style="min-height: 60vh; padding-top: 120px;">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text text-center">
+                    <h1 class="reveal">Get In Touch</h1>
+                    <p class="tagline reveal">Let's discuss your next web development project</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form reveal">
+                    <h2>Send Me a Message</h2>
+                    <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+                    
+                    <form id="contactForm" action="#" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-input" placeholder=" " required>
+                            <label for="name" class="form-label">Your Name</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" class="form-input" placeholder=" " required>
+                            <label for="email" class="form-label">Email Address</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" class="form-input" placeholder=" " required>
+                            <label for="subject" class="form-label">Subject</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" class="form-input" placeholder=" " required></textarea>
+                            <label for="message" class="form-label">Your Message</label>
+                        </div>
+                        
+                        <button type="submit" class="btn submit-btn" style="width: 100%;">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info reveal">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email Me</h3>
+                        <p>customwebxcontact@gmail.com</p>
+                        <p>I typically respond within 24 hours</p>
+                        <a href="mailto:customwebxcontact@gmail.com" class="btn" style="margin-top: 15px; display: inline-block;">
+                            Send Email <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Services Inquiry</h3>
+                        <p>Interested in my web development services?</p>
+                        <p>Let's discuss your project requirements and how I can help bring your ideas to life.</p>
+                        <a href="../services/index.html" class="btn" style="margin-top: 15px; display: inline-block; background: var(--gradient-secondary);">
+                            View Services <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Availability</h3>
+                        <p><strong>Response Time:</strong> Within 24 hours</p>
+                        <p><strong>Working Hours:</strong> Flexible schedule</p>
+                        <p><strong>Project Start:</strong> Usually within 1 week</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Contact Methods -->
+            <div class="section-title reveal" style="margin-top: 80px;">
+                <h2>Other Ways to Connect</h2>
+            </div>
+            
+            <div class="skills-container reveal">
+                <div class="skill-category text-center">
+                    <i class="fab fa-github" style="font-size: 3rem; color: var(--dark);"></i>
+                    <h3>GitHub</h3>
+                    <p>Check out my code repositories, projects, and contributions</p>
+                    <a href="https://github.com/Katro87" target="_blank" class="btn" style="margin-top: 15px;">
+                        Visit GitHub <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                
+                <div class="skill-category text-center">
+                    <i class="fas fa-globe" style="font-size: 3rem; color: var(--primary);"></i>
+                    <h3>Portfolio</h3>
+                    <p>View my complete portfolio and project showcase</p>
+                    <a href="../projects/index.html" class="btn" style="margin-top: 15px;">
+                        View Portfolio <i class="fas fa-eye"></i>
+                    </a>
+                </div>
+                
+                <div class="skill-category text-center">
+                    <i class="fas fa-question-circle" style="font-size: 3rem; color: var(--secondary);"></i>
+                    <h3>FAQs</h3>
+                    <p>Common questions about my services and process</p>
+                    <a href="../about/index.html" class="btn" style="margin-top: 15px;">
+                        Learn More <i class="fas fa-question"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Map Visualization -->
+            <div class="section-title reveal" style="margin-top: 80px;">
+                <h2>Service Coverage</h2>
+                <p>Providing web development services worldwide</p>
+            </div>
+            
+            <div class="contact-card reveal" style="text-align: center;">
+                <i class="fas fa-map-marked-alt" style="font-size: 4rem; color: var(--accent); margin-bottom: 20px;"></i>
+                <h3>Global Reach</h3>
+                <p>I work with clients from around the world, providing remote web development services through online collaboration.</p>
+                <p>No matter where you're located, I can help you build your digital presence.</p>
+                
+                <div class="mt-2">
+                    <div class="tech-tags" style="justify-content: center;">
+                        <span class="tech-tag">Remote Work</span>
+                        <span class="tech-tag">Online Collaboration</span>
+                        <span class="tech-tag">Global Clients</span>
+                        <span class="tech-tag">Flexible Hours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Sufyan <span>Rasheed</span></h3>
+                    <p>Web Developer & Digital Solutions Specialist ready to help with your next project.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Katro87" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:customwebxcontact@gmail.com" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="#" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about/index.html">About</a></li>
+                        <li><a href="../services/index.html">Services</a></li>
+                        <li><a href="../projects/index.html">Projects</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Contact Details</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> customwebxcontact@gmail.com</li>
+                        <li><i class="fas fa-globe"></i> Portfolio: katro87.github.io</li>
+                        <li><i class="fab fa-github"></i> GitHub: Katro87</li>
+                        <li><i class="fas fa-check-circle"></i> Available for new projects</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Sufyan Rasheed. All rights reserved.</p>
+                <p class="powered-by">Powered by <span>Superearns.com</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
