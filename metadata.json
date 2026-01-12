@@ -1,8 +1,0 @@
-
-{
-  "name": "Sufyan Rasheed Portfolio",
-  "description": "A professional, responsive portfolio website for Sufyan Rasheed (Katro87), featuring modern UI/UX, smooth animations, and comprehensive service listings.",
-  "requestFramePermissions": [
-    "geolocation"
-  ]
-}
