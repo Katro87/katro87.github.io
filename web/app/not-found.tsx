@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function NotFound(){return <div className="container empty-state not-found"><span className="eyebrow">404 / A SMALL DETOUR</span><h1>This page isn’t here.</h1><p>Let’s get you back to the services or the homepage.</p><div className="button-row"><Link className="button" href="/">Back home ↗</Link><Link className="text-link" href="/services/">Explore services →</Link></div></div>}
