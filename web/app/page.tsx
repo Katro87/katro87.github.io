@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/link';
 import Image from 'next/image';
 import { ArrowRight,ArrowUpRight,Code2,Workflow,Layers,FileCheck2 } from 'lucide-react';
 import { ContactCTA } from '@/components/ui';

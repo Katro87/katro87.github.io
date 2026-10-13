@@ -1,5 +1,5 @@
 'use client';
-import Link from 'next/link';
+import Link from '@/components/link';
 import { useEffect,useState } from 'react';
 import { ArrowUpRight,Search,X } from 'lucide-react';
 import { categories,services } from '@/lib/services';

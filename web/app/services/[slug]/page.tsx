@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/link';
 import { notFound } from 'next/navigation';
 import { ArrowUpRight } from 'lucide-react';
 import { services,getService,whatsapp,email } from '@/lib/services';

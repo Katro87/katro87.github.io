@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/link';
 import { ArrowUpRight, ArrowRight, Check } from 'lucide-react';
 import { email, whatsapp, getService } from '@/lib/services';
 export function ContactCTA({title='Have a task to finish—or a system to build?',message='Hi Sufyan, I would like to discuss a software, automation or digital services project.',subject='Project inquiry'}:{title?:string;message?:string;subject?:string}){return <section className="cta-panel"><div><span className="eyebrow light">LET’S MAKE THE NEXT STEP CLEAR</span><h2>{title}</h2><p>Tell me what you need. We’ll review the requirements, agree the scope and work out a practical way forward.</p></div><div className="cta-actions"><a className="button" href={whatsapp(message)}>WhatsApp Sufyan <ArrowUpRight size={18}/></a><a className="button button-outline-light" href={email(subject)}>Email an inquiry <ArrowUpRight size={18}/></a></div></section>}

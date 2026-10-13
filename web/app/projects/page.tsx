@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/link';
 import { ArrowUpRight } from 'lucide-react';
 import { projects } from '@/lib/projects';
 import { Breadcrumb,ContactCTA } from '@/components/ui';
