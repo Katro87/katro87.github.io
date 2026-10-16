@@ -26,8 +26,8 @@ class Page(HTMLParser):
         if not self.script:self.copy.append(data)
 files=[OUT/'index.html',*[p for p in OUT.rglob('index.html') if p!=OUT/'index.html' and not p.relative_to(OUT).parts[0].startswith('_') and p.relative_to(OUT).parts[0]!='404'],OUT/'404.html']
 assert len(list((OUT/'services').glob('*/index.html')))==35, 'Missing service routes'
-assert len(list((OUT/'projects').glob('*/index.html')))==4, 'Missing project routes'
-assert len(files)==49, f'Expected 48 pages + 404, found {len(files)}'
+assert len(list((OUT/'projects').glob('*/index.html')))==5, 'Missing project routes'
+assert len(files)==50, f'Expected 49 pages + 404, found {len(files)}'
 pages={p:Page(p.read_text(encoding='utf-8')) for p in files}
 errors=[]; counts=[]
 for p,page in pages.items():
@@ -57,5 +57,5 @@ for p,page in pages.items():
         if len(page.ids.intersection({'overview','scope','requirements','process','deliverables','pricing','questions'}))!=7:errors.append(f'{rel}: incomplete service sections')
 assert not errors,'\n'.join(errors)
 assert (OUT/'sitemap.xml').exists() and (OUT/'robots.txt').exists()
-print(f'PASS: {len(files)} HTML pages, 35 services, four case studies; local links, assets, anchors, headings, metadata and service inquiry messages.')
+print(f'PASS: {len(files)} HTML pages, 35 services, five case studies; local links, assets, anchors, headings, metadata and service inquiry messages.')
 print(f'Service page word counts including navigation: min {min(counts)}, max {max(counts)}.')
