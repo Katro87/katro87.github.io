@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 const files=execFileSync('git',['ls-files'],{encoding:'utf8'}).trim().split('\n');
 const bad=[];
 for(const path of files){
+ if(path.includes('/polyfills-'))continue; // Vendored Unicode tables are not page copy.
  if(!/\.(html|tsx?|jsx?|txt|json|css)$/.test(path))continue;
  try{if(/\uFFFD|\u00e2[\u20ac\u2020\u0153]|\u00c3[\u0080-\u00bf]|\u00c2[\u0080-\u00bf]/.test(readFileSync(path,'utf8')))bad.push(path);}catch{}
 }
